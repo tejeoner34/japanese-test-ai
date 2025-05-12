@@ -11,7 +11,7 @@ export default function Home() {
       </div>
 
       <div className="mt-8 flex space-x-4 animate-fade-in-up delay-200">
-        <Button variant={'secondary'} asChild>
+        <Button asChild>
           <Link href={ROUTES.grammar}>Grammar</Link>
         </Button>
         <Button asChild>
