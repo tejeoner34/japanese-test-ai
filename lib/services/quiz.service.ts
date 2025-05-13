@@ -10,7 +10,7 @@ export const getGrammarQuiz = async (level: string): Promise<Question[]> => {
 };
 
 export const getKanjiQuiz = async (level: string): Promise<Question[]> => {
-  return fetch(`${API_URL}/quiz/kanji-quiz/${level}`)
+  return fetch(`${API_URL}quiz/kanji-quiz/?level=${level}`)
     .then((res) => res.json())
     .then((data) => data)
     .catch((error) => console.error('Error fetching kanji quiz:', error));
