@@ -5,7 +5,10 @@ const QuizQuestionsList = ({ questions }: { questions: Question[] }) => {
   return (
     <div>
       {questions.map((question) => (
-        <div key={question.questionText} className="mb-8 p-4 border rounded-xl shadow-sm bg-white">
+        <div
+          key={question.questionText}
+          className="mb-8 p-4 border rounded-xl shadow-sm bg-white max-w-xl"
+        >
           <QuizForm question={question} />
         </div>
       ))}
