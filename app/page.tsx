@@ -15,7 +15,7 @@ export default function Home() {
           <Link href={ROUTES.grammar}>Grammar</Link>
         </Button>
         <Button asChild>
-          <Link href={ROUTES.kaji}>Kanji</Link>
+          <Link href={ROUTES.kanji}>Kanji</Link>
         </Button>
       </div>
     </>

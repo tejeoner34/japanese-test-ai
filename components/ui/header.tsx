@@ -16,7 +16,7 @@ const Header = () => {
     },
     {
       name: 'Kanji',
-      href: ROUTES.kaji,
+      href: ROUTES.kanji,
     },
   ];
   return (
