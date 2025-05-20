@@ -22,12 +22,12 @@ const QuizForm = ({ question }: { question: Question }) => {
               type="radio"
               id={`option-${index}`}
               value={option.text}
+              name="quiz"
               onChange={() => onSubmit(option)}
-              className="accent-blue-700"
             />
             <label
               htmlFor={`option-${index}`}
-              className={`text-gray-800 cursor-pointer ${
+              className={`cursor-pointer ${
                 chosenAnswer?.text === option.text &&
                 (option.isCorrect ? 'text-blue-500' : 'text-red-500')
               }`}
