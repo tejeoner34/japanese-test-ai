@@ -4,7 +4,7 @@ import { ROUTES } from '@/lib/routing/routes';
 
 export default function Home() {
   return (
-    <>
+    <div className="flex flex-col items-center m-auto">
       <div className="text-center space-y-4 animate-fade-in-up">
         <h1 className="text-5xl font-bold text-blue-700">ようこそ！Japanese Test AIへ</h1>
         <p className="text-lg text-gray-600">Choose what kind of test you want to take</p>
@@ -18,6 +18,6 @@ export default function Home() {
           <Link href={ROUTES.kanji}>Kanji</Link>
         </Button>
       </div>
-    </>
+    </div>
   );
 }
